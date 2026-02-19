@@ -1,0 +1,5 @@
+{
+  "resourcesResourceGroups": "rg-",
+  "documentDBMongoClusters": "docdb-",
+  "cognitiveServicesOpenAI": "oai-"
+}

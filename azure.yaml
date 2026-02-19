@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+name: documentdb-mongo-customer360-ai-accelerator
+metadata:
+  template: documentdb-mongo-customer360-ai-accelerator
+infra:
+  provider: bicep
+  path: ./infra
+hooks:
+  preprovision:
+    shell: sh
+    run: ./infra/preprovision.sh
+    interactive: false
+    continueOnError: false
+  postprovision:
+    shell: sh
+    run: ./infra/postprovision.sh
+    interactive: true
+    continueOnError: false

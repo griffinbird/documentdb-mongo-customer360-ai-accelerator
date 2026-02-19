@@ -1,0 +1,22 @@
+# Environment files with credentials
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated data
+data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# azd
+.azure/

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "documentdbAdminPassword": {
+      "value": "${AZURE_DOCUMENTDB_ADMIN_PASSWORD}"
+    },
+    "documentdbAdminUsername": {
+      "value": "${AZURE_DOCUMENTDB_ADMIN_USERNAME=docdbadmin}"
+    },
+    "documentdbClusterTier": {
+      "value": "${AZURE_DOCUMENTDB_CLUSTER_TIER=M30}"
+    },
+    "openAiEmbeddingsDeploymentName": {
+      "value": "${AZURE_OPENAI_EMBEDDINGS_DEPLOYMENT=text-embedding-ada-002}"
+    },
+    "openAiEmbeddingsModelName": {
+      "value": "${AZURE_OPENAI_EMBEDDINGS_MODEL=text-embedding-ada-002}"
+    },
+    "openAiCompletionsDeploymentName": {
+      "value": "${AZURE_OPENAI_COMPLETIONS_DEPLOYMENT=gpt-4.1}"
+    },
+    "openAiLocation": {
+      "value": "${AZURE_OPENAI_LOCATION=}"
+    }
+  }
+}
